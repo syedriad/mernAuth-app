@@ -21,7 +21,7 @@ function Login({ setAuthenticated }) {
     }
 
     try {
-      const api = "http://localhost:8080/auth/login"
+      const api = "https://mern-auth-app-three.vercel.app/auth/login"
       const response = await fetch(api, {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
