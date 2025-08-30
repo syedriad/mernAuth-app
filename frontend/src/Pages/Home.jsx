@@ -22,7 +22,7 @@ function Home({ setAuthenticated }) {
 
   const fetchProduct = async () => {
     try {
-      const url = "http://localhost:8080/products"
+      const url = "https://mern-auth-app-three.vercel.app/products"
       const response = await fetch(url, {
         headers: { 'Authorization': localStorage.getItem('token') },
       })
