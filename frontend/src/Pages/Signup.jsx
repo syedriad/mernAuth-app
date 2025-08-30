@@ -21,7 +21,7 @@ function Signup() {
     }
 
     try {
-      const api = "http://localhost:8080/auth/signup"
+      const api = "https://mern-auth-app-three.vercel.app/auth/signup"
       const response = await fetch(api, {
         method: 'POST',
         headers: { "Content-Type": "application/json" },
